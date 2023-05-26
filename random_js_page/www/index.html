@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title> Szkoła ponadgimnazjalna </title>
+    <link href="styl.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+    <h1>Projekt strony internetowej szkoły ponadgimnazjalnej</h1>
+</header>
+
+
+<section id="Panel_lewy">
+    <h3>Do pobrania</h3>
+
+<li>
+    <a href="../baza/zapytania.txt">Zapytania Sql </a> <br>
+</li>
+<li>
+    <a href="../baza/szkola_nowa.sql">Baza danych</a> <br>
+</li>
+
+<hr color="#ffd87e"> 
+
+<h3>Wyznaczanie najwyższej średniej</h3>
+
+<li>
+    Polak <input type="tekst" id="polak"> <br>
+</li>
+<li>
+    Nowak <input type="tekst" id="nowak"> <br>
+</li>
+<li>
+    Rysik <input type="tekst" id="rysik"> <br> <br>
+</li>
+
+<button type="button" onclick="count()"><label>Wyznacz</label></button> <br>
+
+
+<h3>Najwyższa średnia:</h3><span id="wypisz"></span>
+
+</section>
+
+<section id="Panel_prawy">
+
+<table>
+    <tr>
+        <td>treść Zapytania</td>
+        <td width="405px">Zrzut ekranu</td>
+    </tr>
+    <tr>
+        <td>INSERT INTO uczen(id, imie, nazwisko, id_klasy) values(27, "Wiktoria", "Jasny", 1);</td>
+        <td width="405px"><img src="../baza/kwerenda1.jpg" alt="kwerenda1"></td>
+    </tr>
+    <tr>
+        <td>SELECT wychowawca.imie, wychowawca.nazwisko FROM wychowawca INNER JOIN uczen ON wychowawca.id_klasy = uczen.id_klasy WHERE uczen.nazwisko like "Markiewicz";</td>
+        <td width="405px"><img src="../baza/kwerenda2.jpg" alt="kwerenda2"></td>
+    </tr>
+    <tr>
+        <td>CREATE USER 'Jan_Bogucki'@'localhost' IDENTIFIED BY "jb_123";</td>
+        <td width="405px"><img src="../baza/nowy_uzytkownik.jpg" alt="nowy_uzytkownik"></td>
+    </tr>
+    <tr>
+        <td>GRANT SELECT, INSERT, DELETE ON uczen TO Jan_Bogucki@localhost;</td>
+        <td width="405px"><img src="../baza/uprawnienia.jpg" alt="uprawnienia"></td>
+    </tr>
+</table>
+
+</section>
+
+<footer>
+
+    <h4>stronę wykonał:Numer_PESEL</h4>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>

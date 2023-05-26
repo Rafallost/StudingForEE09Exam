@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+<h1>ZAD1</h1><br>
+<button onclick="napis()" id="napisb">witaj</button>
+<span id="napis"></span>
+<script >
+function napis(){
+    document.getElementById("napis").innerHTML = "<h1>Witaj informatyku</h1>"
+    document.getElementById("napisb").style.visibility = "hidden";
+}
+</script>
+<hr>
+<h1>ZAD2</h1><br>
+<input onmousemove="suwak()"" type="range" min=0 max=100 value=0 id="su"><br>
+<span id="kurczak"></span>
+<script >
+function suwak(){
+    var wartosc;
+    wartosc = document.getElementById("su").value ;
+
+    document.getElementById("kurczak").innerHTML = wartosc;
+
+}
+</script>
+<hr>
+<h1>ZAD3</h1>
+
+    <button id="jeden" onclick="xd()">1</button><br>
+    <button id="dwa" onclick="xd1()">2</button><br>
+    <button id="trzy" onclick="xd2()">3</button><br>
+
+    <span id="wynik"></span>
+<script>
+function xd(){
+    var wartosc;
+    wartosc = document.getElementById("jeden").innerHTML;
+    document.getElementById("wynik").innerHTML = "Kliknołeś przycisk "+wartosc;
+}
+
+function xd1(){
+    var wartosc;
+
+    wartosc = document.getElementById("dwa").innerHTML;
+    document.getElementById("wynik").innerHTML = "Kliknołeś przycisk "+wartosc;
+}
+
+function xd2(){
+    var wartosc;
+    wartosc = document.getElementById("trzy").innerHTML;
+    document.getElementById("wynik").innerHTML = "Kliknołeś przycisk "+wartosc;
+}
+</script>
+<hr>
+<h1>ZAD4</h1>
+utwórz listę select,  z nazwami 5 krajów . Wybranie danego kraju ma wyświetlić liczbe mieszkańców oraz flagę kraju <br>
+
+<select id="choice" onclick="kraj()">
+    <option value="POL">POLSKA</option>
+    <option value="RU">ROSJA</option>
+    <option value="GE">NIEMCY</option>
+    <option value="CZ">CZECHY</option>
+    <option value="HOL">HOLANDIA</option>
+</select>
+<br>
+<span id="wyniki"></span>
+
+<script>
+
+function kraj(){
+    if(document.getElementById("choice").value=="POL")
+    {
+        document.getElementById("wyniki").innerHTML = "37,95 miliona <img src='pol.jpg'>";
+    }
+    else if(document.getElementById("choice").value=="RU")
+    {
+        document.getElementById("wyniki").innerHTML = "144,1 miliona <img src='Ru.jpg'>"; 
+    }
+    else if(document.getElementById("choice").value=="GE")
+    {
+        document.getElementById("wyniki").innerHTML = "83,24 miliona <img src='GE.jpg'>"; 
+    }
+    else if(document.getElementById("choice").value=="CZ")
+    {
+        document.getElementById("wyniki").innerHTML = "10,7 miliona <img src='cz.jpg'>"; 
+    }
+    else if(document.getElementById("choice").value=="HOL")
+    {
+        document.getElementById("wyniki").innerHTML = "17,44 miliona <img src='HOL.jpg'>"; 
+    }
+}  
+
+</script>
+
+
+<hr>
+<h1>ZAD5</h1>
+napisz skrypt który wstawi 3 radioubtoony 100,200,300 wybranie którejś z opcji spowoduję wyświetlenie tej wartość
+<form>
+    100<input type="radio" onclick="pierwszy(this.value)" name="radio" value="100" ><br>
+    200<input type="radio" onclick="pierwszy(this.value)" name="radio" value="200"><br>
+    300<input type="radio" onclick="pierwszy(this.value)" name="radio" value="300"><br>
+</form>
+
+<span id="result"></span>
+<script>
+    function pierwszy(x){
+            document.getElementById("result").innerHTML = x;
+    }
+</script>
+<hr>
+<h1>ZAD6</h1>
+napisz skrypt który użyje pole checkbox. obok pola ma być napisany tekst"zapoznałem zsię z regulaminem sklepu".
+jego zaznaczenie spowoduję wyświetlenie poniżej w 
+nagłówku 2 stopnia tekst:pamientaj!koniecznie przeczytaj nasz regulamin <br><br>
+
+<input type="checkbox" id="check" onclick="check(this.checked)">zapoznałem się z regulaminem sklepu<br>
+<span id="siema"></span>
+<script>
+function check(x){
+    if(x)
+    document.getElementById("siema").innerHTML =  "<h2>pamiętaj!koniecznie przeczytaj nasz regulamin</h2>";
+    else
+    document.getElementById("siema").innerHTML =  " ";
+}
+</script>
+<hr>
+<h1>ZAD7</h1>
+napisz skrypt, który użyje dowonej sktruktury w formularzu i pozwoli skofigurowac zamówienie w barze szybkiej obsługi
+wybranie którejś z opcji spowoduję wyświetlenie napisu: Ostatnio wybrano:nazwa produkt u. <br>
+
+    <input type="radio" name="t"  value="kura" onclick="tu(this.value)">kura<br>
+    <input type="radio" name="t"  value="makaron" onclick="tu(this.value)">makaron<br>
+    <input type="radio" name="t"  value="szynka" onclick="tu(this.value)">szynka<br>
+    <span id="nwm"></span>
+<script>
+    function tu(x){
+        document.getElementById("nwm").innerHTML ="Ostatnio wybrano:"+x;
+    }
+    </script>
+
+<hr>
+<h1>ZAD8</h1>
+napisz skrypt, który po naciśnięciu przycisku zmieni tło na wartość, którą wpiszemy w inputa w systemie szestnastkowym <br>
+<input type="button" value="Wciśnij" id="przycisk" onclick="kolorki()"><br>
+<input type="text" id="tekst" value="wpisz tutaj kolor strony dla tła strony w systemie szesnastkowym" size="55">
+<script>
+    function kolorki(){
+        var a;
+            a = document.getElementById("tekst").value;
+            document.body.style.backgroundColor = "#"+a;
+    }
+
+</script>
+<hr>
+<h1>ZAD9</h1>
+uwtórz sekcje, 300 na 300 px z niebieskim obramowaniem, dodaj 2 przycisk
+zielone tło i czerowne tło, po naciśnięciu zmienia na dany kolor sekcję
+
+<section id="sekcja" style="width: 300px; height: 300px; border: 1px solid blue">
+
+</section>
+<input type="button" value="zielone tło" style="background-color: green;" onclick="zielony(this.style.backgroundColor)">
+<input type="button" value="czerwone tło" style="background-color: red;" onclick="zielony(this.style.backgroundColor)">
+
+<script>
+    function zielony(x){
+        document.getElementById("sekcja").style.backgroundColor = x;
+    }
+</script>
+
+<hr>
+<h1>ZAD10</h1>
+
+<p>stwórz  skrypt z suwakiem który zmienia rozmiaar czcionki 
+od 0 do 250 px, wartość początkowa to 14 px</p>
+
+<input type="range" min="0" max="250" value="14" onmousemove="suwak2(this.value)"><br>
+<span id="blub">przykładowy tekst</span>
+<script>
+function suwak2(x){
+    document.getElementById("blub").style.fontSize = x+"px";
+    document.getElementById("blub").innerHTML = "przykładowy tekst "+x+"px";
+    }
+</script>
+
+</body>

@@ -1,0 +1,71 @@
+#gorny1, #gorny2{
+    background-color: deepskyblue;
+    height: 150px;
+    font-size: 120%;
+    text-align: center;
+}
+
+#gorny1{
+    width:25%;
+    float:left;
+}
+
+#gorny2{
+    width: 75%;
+    float:left;
+}
+
+#banner, #stopka{
+    background-color: tomato;
+    text-align: center;
+}
+
+#banner{
+    height: 50px;
+    clear:both;
+}
+
+#glowny1, #glowny2{
+    background-color: deepskyblue;
+    height: 350px;
+    width: 50%;    
+    float: left;
+}
+
+h1{
+    color: maroon;
+}
+
+table{
+    height: 100px;
+    width: 50%;
+    margin-top:50px;
+}
+
+input{
+    background-color: tomato;
+    border:0px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+#bruh{
+    width: 300px;
+}
+
+#lewy, #prawy{
+    margin-top:25px;
+    margin-right: 50px;
+}
+
+#lewy{
+    float:right;
+}
+
+#prawy{
+    float:left;
+}
+
+#stopka{
+    clear:both;
+}

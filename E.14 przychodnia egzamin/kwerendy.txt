@@ -1,0 +1,2 @@
+Zapytanie 1: SELECT * FROM lekarze;
+Zapytanie 2: SELECT * FROM pacjenci ORDER BY nazwisko, imie ASC;

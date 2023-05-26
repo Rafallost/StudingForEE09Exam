@@ -1,0 +1,4 @@
+zad.1.select imie, nazwisko, opis, zdjecie from osoby where Hobby_id=1 or Hobby_id=2 or Hobby_id=6
+zad.2.select osoby.id, osoby.nazwisko, hobby.nazwa from osoby inner join hobby ON osoby.Hobby_id=hobby.id where osoby.rok_urodzenia>2000;
+zad.3.select id, zdjecie from osoby where imie='Monika' limit 5;
+zad.4.CREATE table wpisy( id int unsigned not null AUTO_INCREMENT PRIMARY key , wpis text, uzytkownik_id int unsigned not null );

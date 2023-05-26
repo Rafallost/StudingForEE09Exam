@@ -1,0 +1,11 @@
+1.Zapytanie Zapisujące w tabeli wychowawca rekord danych: id=5, imie=Maciej, nazwisko=Stasiak, id_klasy=5,
+INSERT INTO wychowawca(id, imie, nazwisko, id_klasy) values(5, "Maciej", "Stasiak", 5);
+
+2.Zapytanie wybierające jedynie imiona i nazwiska uczniów, których wychowawczyni nazywa się Michalska.
+SELECT uczen.imie, uczen.nazwisko FROM uczen INNER JOIN wychowawca ON uczen.id_klasy = wychowawca.id_klasy WHERE wychowawca.nazwisko = "Michalska"
+
+3.Zapytanie tworzące użytkownika K_Pietkiewicz na localhost z hasłem kp_123
+CREATE USER 'K_Pietkiewicz'@'localhost' IDENTIFIED BY "kp_123"
+
+4.Zapytanie nadające prawa dla użytkownika K_Pietkiewicz wybierania i dodawania danych dla tabeli uczen.
+GRANT SELECT, INSERT on uczen TO K_Pietkiewicz

@@ -1,0 +1,58 @@
+html
+{
+    font-family: Tahoma;
+}
+
+header
+{
+    background-color: #af8c4b;
+    height: 60px;
+    text-align: center;
+
+
+}
+
+#Panel_lewy
+{
+    background-color: #af8c4b;
+    width: 30%;
+    height: 500px;
+    text-align: right;
+    float: left;
+
+
+}
+
+
+#Panel_prawy
+{
+    background-color: #ffd87e;
+    width: 70%;
+    height: 500px;
+    overflow: scroll;
+    float: left;
+
+}
+
+
+footer{
+    background-color: #af8c4b;
+    height: 25px;
+    text-align: center;
+    clear: both;
+
+}
+
+td{
+    border: black 1px dotted ;
+}
+
+li{
+    list-style-type: circle;
+
+}
+
+a{
+    color: #ffd87e;
+}
+

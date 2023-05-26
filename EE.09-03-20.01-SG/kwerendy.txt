@@ -1,0 +1,4 @@
+zad.1. SELECT * from pogoda where miasta_id=2 order by data_prognozy DESC;
+zad.2. SELECT id, temperatura_dzien from pogoda where cisnienie<1000;
+zad.3. SELECT data_prognozy, opady, nazwa from pogoda inner join miasta ON pogoda.miasta_id=miasta.id where temperatura_dzien<20;
+zad.4. DELETE from pogoda where id=8;

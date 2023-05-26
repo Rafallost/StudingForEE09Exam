@@ -1,0 +1,4 @@
+Zad.1.INSERT INTO `uczen` (`id`, `nazwisko`, `imie`, `id_klasy`) VALUES ('27', 'Jasny', 'Wiktoria', '1');
+zad.2.SELECT wychowawca.imie, wychowawca.nazwisko from wychowawca inner join uczen on wychowawca.id_klasy=uczen.id_klasy where uczen.nazwisko='Markiewicz'
+zad.3.Create user 'Jan_Bogucki'@'localhost' IDENTIFIED BY "jb_123"
+zad.4.GRANT SELECT, INSERT, DELETE ON uczen to Jan_Bogucki@localhost

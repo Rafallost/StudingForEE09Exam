@@ -1,0 +1,4 @@
+zad.1.SELECT nazwa, wystepowanie from ryby where nazwa= 'sum' OR nazwa ='okon' or nazwa='szczupak' or nazwa='sandacz' or nazwa='dorsz';
+zad.2.SELECT Ryby_id, wymiar_ochronny from okres_ochronny where wymiar_ochronny<50;
+zad.3.SELECT ryby.nazwa, lowisko.akwen, lowisko.wojewodztwo from ryby INNER JOIN lowisko on Ryby.id = lowisko.Ryby_id where lowisko.rodzaj=2;
+zad.4.ALTER TABLE ryby ADD COLUMN dobowy_limit int;

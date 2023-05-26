@@ -1,0 +1,62 @@
+<!doctype html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Strona ponadgimnazjalna</title>
+</head>
+
+<body>
+
+<header>
+    <h2>Projekt strony internetowej szkoły ponadgimnazjalnej</h2>
+</header>
+
+<section id="main">
+    <section id="left"><h3>Do pobrania</h3>
+        <ul>
+            <li><a href="baza/zapytania.txt">zapytania SQL</a></li>
+            <li><a href="baza/szkola_nowa.sql">baza danych</a></li>
+        </ul>
+    </section>
+<section id="center">
+        <table>
+            <tr>
+                <td>Treść zapytania</td><td width="405px">Zrzut ekranu</td>
+            </tr>
+                <tr>
+                    <td>1.zapisujące w tabeli uczen rekord danych</td><td width="405px"><img src="kwerenda1.jpg" alt="kwerenda1.jpg"></td>
+                </tr>
+                <tr>
+                    <td>2.wybierające jedynie imię i nazwisko wychowawcy klasy</td><td width="405px"><img src="kwerenda2.jpg" alt="kwerenda1.jpg"></td>
+                </tr>
+                <tr>
+                    <td>3.tworzące użytkownika Jan_Bogucki na localhost z hasłem jb_123</td><td width="405px"><img src="nowy_uzytkownik.jpg" alt="nowy_uzytkownik.jpg"></td>
+                <tr>
+                    <td>4.nadające prawa dla użytkownika Jan_Bogucki@localhost</td><td width="405px"><img src="uprawnienia.jpg" alt="uprawnienia.jpg"></td>
+                </tr>
+            </tr>
+        </table>
+</section>
+
+<section id="right"><h4>Obliczanie średniej ocen</h4>
+    <ul>
+        <li>Polak <input type="text" id="polak"></li>
+        <li>Nowak <input type="text" id="nowak"></li>
+        <li>Rysik <input type="text" id="rysik"></li>
+    </ul>
+    
+    <button type="button" onclick="count()">Policz</button>
+    <h4>Średnia ocen:</h4><span id="output"></span>
+</section>
+
+</section>
+<footer>
+    <h5>autor strony: 000000000</h5>
+</footer>
+
+<script src="script.js"></script>
+
+</body>

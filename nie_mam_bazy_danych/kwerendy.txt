@@ -1,0 +1,7 @@
+1. SELECT * FROM miejscowosc;
+
+2. SELECT * FROM rodzaj;
+
+3. SELECT cena FROM cennik WHERE miejscowosc_id='5' and rodzaj_id='1';
+
+4. UPDATE cennik, miejscowosc SET cena = cena * 1.1 WHERE cennik.miejscowosc_id = miejscowosc.id AND miejscowosc.nazwa LIKE 'Rewal';

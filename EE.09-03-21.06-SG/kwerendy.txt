@@ -1,0 +1,4 @@
+1.select id, nazwa, opis, zdjecie from produkty where id = 18 || id = 22 || id = 23 || id = 25;
+2.SELECT id, nazwa, opis, zdjecie from produkty where Rodzaje_id = 12;
+3.SELECT produkty.nazwa, rodzaje.nazwa from produkty inner join rodzaje on produkty.Rodzaje_id=rodzaje.id where opis like "%Leia%";
+4.DELETE from produkty where id = 15;

@@ -1,0 +1,37 @@
+html{
+    font-family: Helvetica;
+}
+
+#benner, footer{
+    background-color: #AF4448;
+    color:white;
+    text-align: center;
+    height: 20px;
+}
+
+#lewy{
+    float: left;
+}
+#prawy{
+    float: left;
+}
+footer{
+    clear:both;
+}
+
+#lewy, #prawy{
+    background-color: #FFA4A2;
+    height: 650px;
+    width: 50%;
+}
+
+h4{
+    margin: 0px;
+}
+
+input[type="submit"]{
+    background-color: #AF4448;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+}

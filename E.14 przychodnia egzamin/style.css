@@ -1,0 +1,77 @@
+#up{
+    height: 160px;
+    background-color: #3BBB80;
+    color: white;
+    padding: 10px; 
+
+  
+}
+
+#nawi{
+    height: 50px;
+    text-align: left;
+    clear:both;
+
+}
+
+#mein{
+    height: 450px;
+    font-family: Arial;
+    color: black;
+    padding: 10px;
+    background-color: #4EB555;
+
+
+}
+
+footer{
+    background-color: #3BBB80;
+    font-family: Arial;
+    text-align: center;
+    color: white;
+    padding: 10px;
+
+}
+
+#strzykawa{
+    position: fixed;
+    top:30px;
+    left:30px;
+
+}
+
+#przychodnia{
+
+    position: fixed;
+    top:30px;
+    right:30px;
+
+}
+
+img{
+    border:solid 1px; 
+}
+
+button{
+    color:gray;
+    border:solid 1px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    padding: 10px;
+}
+
+
+
+#dwa{
+    float:left;
+    width:49%;
+
+}
+
+#cokolwiek{
+    float:right;
+    width:50%;
+
+}

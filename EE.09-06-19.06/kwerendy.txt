@@ -1,0 +1,4 @@
+zad.1.INSERT into zgloszenia (ratownicy_id, dyspozytorzy_id, adres,pilne, czas_zgloszenia) values(1,4,"Warszawa, Staszica 34/5",1,CURRENT_TIME());
+zad.2.SELECT adres, dyspozytorzy_id from zgloszenia where ratownicy_id=3;
+zad.3.create user 'anna'@'localhost' identified by 'Anna4!';
+zad.4.GRANT INSERT, SELECT, UPDATE on ratownictwo.zgloszenia to 'anna'@'localhost';

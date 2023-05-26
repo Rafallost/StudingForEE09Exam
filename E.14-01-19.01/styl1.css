@@ -1,0 +1,53 @@
+html{
+    font-family: Helvetica;
+}
+
+#boczny{
+    background-color: navy;
+    color: white;
+    width: 25%;
+    height: 700px;
+    float: left;
+}
+
+#pierwszy{
+    background-color: royalblue;
+    width:75%;
+    height:100px;
+    float: left;
+
+}
+
+#drugi{
+    background-color: steelblue;
+    height: 300px;
+    width: 75%;  
+    float: left; 
+}
+
+#trzeci{
+    background-color: royalblue;
+    text-align: center;
+    height: 300px;
+    width: 75%;   
+    float: left;
+}
+
+footer{
+     background-color: steelblue;
+     text-align: center;
+}
+
+h1{
+    letter-spacing: 5px;
+}
+
+form:hover{
+background-color: deepskyblue;
+}
+form{
+    margin: 30px;
+    line-height: 3;
+}
+
+

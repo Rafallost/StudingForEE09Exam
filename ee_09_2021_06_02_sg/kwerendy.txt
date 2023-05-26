@@ -1,0 +1,4 @@
+zad1.select nazwa, ilosc, opis, cena, zdjecie from produkty where rodzaje_id=1 || rodzaje_id=2;
+zad2.select produkty.nazwa, producenci.nazwa from produkty inner join producenci ON producenci.id=produkty.Producenci_id where ilosc <10 and Rodzaje_id = 1;
+zad3.CREATE user 'anna'@'localhost' identified by '@nn23';
+zad4.insert into produkty(Rodzaje_id,Producenci_id,nazwa,ilosc,cena,zdjecie) values(1,2,'owoc1',10,9.99,'owoce.jpg');

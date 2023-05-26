@@ -1,0 +1,4 @@
+zad.1 select id, imie, nazwisko, rok_urodzenia, zdjecie from osoby limit 30;
+zad.2 SELECT imie, nazwisko, rok_urodzenia, opis, zdjecie, nazwa from osoby inner join hobby on osoby.Hobby_id = hobby.id where hobby.id=10;
+zad.3 select avg(rok_urodzenia), min(rok_urodzenia), max(rok_urodzenia) from osoby;
+zad.4 UPDATE osoby SET opis='film' WHERE Hobby_id=4;
